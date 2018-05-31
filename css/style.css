@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Special+Elite");
+body {
+  background-color: #f8f6f2;
+}
+
+body main {
+  background-image: url("https://images.unsplash.com/photo-1519120443186-4620c77c7130?ixlib=rb-0.3.5&s=4ccf907a3dacdb83ad6868307ee8817a&auto=format&fit=crop&w=1619&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #f8f6f2;
+  position: relative;
+  margin-top: 40px;
+  max-width: 1200px;
+  height: 80vh;
+}
+
+body main header {
+  font-family: "Open Sans", sans-serif;
+  color: #286090;
+  font-weight: 900;
+}
+
+.box {
+  background-color: #f8f6f2;
+  width: 25vw;
+  margin: 40px auto;
+  display: block;
+  padding: 20px 10px;
+  font-family: "Special Elite", cursive;
+}
+
+.box .quote {
+  font-size: 24px;
+}
+
+.box .author {
+  font-size: 16px;
+}
+
+.buttons {
+  margin-top: 80px;
+}
+
+.buttons button {
+  font-family: "Open Sans", sans-serif;
+}
+
+.buttons .tweet {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.buttons .tweet i.fa {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+button,
+.tweet {
+  margin: 10px 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-top: 20px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: none;
+  color: #286090;
+}
+/*# sourceMappingURL=style.css.map */

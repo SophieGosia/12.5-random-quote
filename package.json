@@ -1,0 +1,49 @@
+{
+  "name": "NPM-1",
+  "version": "1.0.0",
+  "description": "https://sophiegosia.github.io/8.3/",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:html && npm run test:js",
+    "test:html": "globstar nu-html-checker *.html",
+    "test:js": "globstar eslint js/*.js",
+    "init-project": "npm install && npm-run-all init:*",
+    "init:dirs": "mkdirp sass css vendor images js",
+    "init:files": "touch README.md index.html sass/style.scss js/script.js",
+    "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
+    "build": "npm run build:clean && npm run build:sass && npm run build:autoprefixer && npm run test",
+    "build:clean": "rimraf css/*.css",
+    "build:sass": "node-sass --output-style compact -o css sass",
+    "build:autoprefixer": "autoprefixer-cli css/style.css",
+    "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
+    "watch": "npm-run-all build -p watch:*",
+    "watch:sassprefixer": "onchange sass/*.scss -- npm-run-all sassprefixer:*",
+    "sassprefixer:sass": "node-sass --output-style expanded --source-map true -o css sass",
+    "sassprefixer:autoprefixer": "autoprefixer-cli css/style.css",
+    "watch:browsersync": "browser-sync start --server --files 'css/*.css' '*.html'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-cli": "^1.0.0",
+    "browser-sync": "^2.23.6",
+    "eslint": "^4.19.1",
+    "globstar": "^1.0.0",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "nu-html-checker": "^0.1.0",
+    "onchange": "^4.0.0"
+  },
+  "dependencies": {
+    "rimraf": "^2.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SophieGosia/js-1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SophieGosia/js-1/issues"
+  },
+  "homepage": "https://github.com/SophieGosia/js-1#readme"
+}

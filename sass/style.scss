@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Special+Elite");
+
+$typewrite-font: 'Special Elite', cursive;
+$normal-font: 'Open Sans', sans-serif;
+$blue-color: #286090;
+$bright-color: #f8f6f2;
+
+body {
+  background-color: $bright-color;
+  main {
+    background-image: url('https://images.unsplash.com/photo-1519120443186-4620c77c7130?ixlib=rb-0.3.5&s=4ccf907a3dacdb83ad6868307ee8817a&auto=format&fit=crop&w=1619&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $bright-color;
+    position: relative;
+    margin-top: 40px;
+    max-width: 1200px;
+    height: 80vh;
+    header {
+      font-family: $normal-font;
+      color: $blue-color;
+      font-weight: 900;
+    }
+  }
+}
+
+.box {
+  background-color: $bright-color;
+  width: 25vw;
+  margin: 40px auto;
+  display: block;
+  padding: 20px 10px;
+  font-family: $typewrite-font;
+  .quote {
+    font-size: 24px;
+  }
+  .author {
+    font-size: 16px;
+  }
+}
+
+.buttons {
+  margin-top: 80px;
+  button {
+    font-family: $normal-font;
+  }
+  .tweet {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: $normal-font;
+    i.fa {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+}
+
+button,
+.tweet {
+  margin: 10px 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-top: 20px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: none;
+  color: #286090;
+}
