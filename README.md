@@ -1,6 +1,6 @@
 12.5 - Get random quote
 
-https://codepen.io/sophie_gosia/pen/
+https://codepen.io/sophie_gosia/pen/rKVvYW
 
 How to run this project: 
 
