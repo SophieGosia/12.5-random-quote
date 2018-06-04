@@ -1,86 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Special+Elite");
-body {
-  background-color: #f8f6f2;
-}
+body { background-color: #f8f6f2; }
 
-body main {
-  background-image: url("https://images.unsplash.com/photo-1519120443186-4620c77c7130?ixlib=rb-0.3.5&s=4ccf907a3dacdb83ad6868307ee8817a&auto=format&fit=crop&w=1619&q=80");
-  background-size: cover;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-color: #f8f6f2;
-  margin-top: 40px;
-  max-width: 1200px;
-  min-height: 80vh;
-}
+body main { background-image: url("https://images.unsplash.com/photo-1519120443186-4620c77c7130?ixlib=rb-0.3.5&s=4ccf907a3dacdb83ad6868307ee8817a&auto=format&fit=crop&w=1619&q=80"); background-size: cover; background-position: 50% 0; background-repeat: no-repeat; background-color: #f8f6f2; margin-top: 40px; max-width: 1200px; min-height: 80vh; }
 
-body main h1 {
-  font-family: "Open Sans", sans-serif;
-  color: #286090;
-  font-weight: 900;
-  font-size: 30px;
-}
+body main h1 { font-family: "Open Sans", sans-serif; color: #286090; font-weight: 900; font-size: 30px; }
 
-.box {
-  background-color: #f8f6f2;
-  width: 25vw;
-  margin: 50px auto;
-  display: block;
-  padding: 30px;
-  font-family: "Special Elite", cursive;
-}
+.box { background-color: #f8f6f2; width: 25vw; margin: 50px auto; display: block; padding: 30px; font-family: "Special Elite", cursive; }
 
-.box .quote {
-  font-size: 24px;
-}
+.box .quote { font-size: 24px; }
 
-.box .author {
-  font-size: 16px;
-}
+.box .author { font-size: 16px; }
 
-.buttons {
-  margin-top: 80px;
-}
+.buttons { margin-top: 80px; }
 
-.buttons .tweet {
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-}
+.buttons .tweet { text-decoration: none; font-family: "Open Sans", sans-serif; }
 
-.buttons .tweet i.fa {
-  font-size: 30px;
-  line-height: 30px;
-}
+.buttons .tweet i.fa { font-size: 30px; line-height: 30px; }
 
-.buttons button,
-.buttons .tweet {
-  margin: 10px 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 8px;
-  width: 160px;
-  border-radius: 5px;
-  background-color: #286090;
-  color: #f8f6f2;
-  font-family: "Open Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-}
+.buttons button, .buttons .tweet { margin: 10px 20px; display: block; margin-left: auto; margin-right: auto; padding: 8px; width: 160px; border-radius: 5px; background-color: #286090; color: #f8f6f2; font-family: "Open Sans", sans-serif; font-size: 20px; font-weight: 500; }
 
-.buttons button:hover,
-.buttons .tweet:hover {
-  background-color: #f8f6f2;
-  color: #286090;
-}
+.buttons button:hover, .buttons button:focus, .buttons .tweet:hover, .buttons .tweet:focus { background-color: #f8f6f2; color: #286090; }
 
-footer {
-  width: 100%;
-  margin-top: 20px;
-  padding: 10px 0;
-  text-align: center;
-  background-color: none;
-  color: #286090;
-}
-/*# sourceMappingURL=style.css.map */
+.buttons button:focus, .buttons .tweet:focus { border: 3px solid #286090; font-weight: 600; }
+
+footer { width: 100%; margin-top: 20px; padding: 10px 0; text-align: center; background-color: none; color: #286090; }

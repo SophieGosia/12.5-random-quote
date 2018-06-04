@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("https://fonts.googleapis.com/css?family=Special+Elite");
-$typewrite-font: 'Special Elite',
-cursive;
-$normal-font: 'Open Sans',
-sans-serif;
+$typewrite-font: 'Special Elite', cursive;
+$normal-font: 'Open Sans', sans-serif;
 $blue-color: #286090;
 $bright-color: #f8f6f2;
+
 body {
   background-color: $bright-color;
   main {
@@ -36,6 +35,7 @@ body {
   .quote {
     font-size: 24px;
   }
+
   .author {
     font-size: 16px;
   }
@@ -51,6 +51,7 @@ body {
       line-height: 30px;
     }
   }
+
   button,
   .tweet {
     margin: 10px 20px;
@@ -65,9 +66,15 @@ body {
     font-family: $normal-font;
     font-size: 20px;
     font-weight: 500;
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $bright-color;
       color: $blue-color;
+    }
+
+    &:focus {
+      border: 3px solid $blue-color;
+      font-weight: 600;
     }
   }
 }
