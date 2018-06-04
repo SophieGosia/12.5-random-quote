@@ -10,23 +10,23 @@ function getQuote() {
 }
 
 function createTweet(input) {
-  var data = input[0];
-  var quoteText = $(data.content).text().trim();
-  var quoteAuthor = data.title;
-  var tweetText = 'Quote of the day - ' + quoteText + ' Author: ' + quoteAuthor;
-  var tweet;
+  const {
+    title,
+    content,
+  } = input[0];
 
-  if (!quoteAuthor.length) {
-    quoteAuthor = 'Unknown author';
-  }
+  const quote = $(content).text().trim();
+  const author = title || 'Unknown author';
 
-  if (tweetText.length > 140) {
+  const tweet = 'Quote of the day - ${quote} Author: ${author}';
+
+  if (tweet.length > 140) {
     getQuote();
   } else {
-    tweet = tweetLink + encodeURIComponent(tweetText);
-    $('.quote').text(quoteText);
-    $('.author').text('Author: ' + quoteAuthor);
-    $('.tweet').attr('href', tweet);
+    const href = tweetLink + encodeURIComponent(tweet);
+    $('.quote').text(quote);
+    $('.author').text(`Author: ${author}`);
+    $('.tweet').attr('href', href);
   }
 }
 
