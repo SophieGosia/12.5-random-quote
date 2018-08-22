@@ -1,4 +1,4 @@
-<p align="center">Random quote machine</p>
+<p align="center" style="font-size:20px" ><strong>Random quote machine</strong></p>
 
 <p align="center">
   <a href="https://ibb.co/kJM4Xe"><img src="https://preview.ibb.co/nzfbdK/quote.jpg" alt="quote" border="0" width="400"></a>
